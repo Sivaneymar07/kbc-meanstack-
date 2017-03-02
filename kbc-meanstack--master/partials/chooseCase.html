@@ -1,18 +1,28 @@
+
 <section class="container">
+
 	<a href="#"><img src="assets/images/lifeline50-50.png" class="lifeline" alt="points-earned-logo"></a>
 	<a href="#"><img src="assets/images/lifeline-audience.png" class="lifeline" alt="points-earned-logo"></a>
 	<div class="clear"></div>
 	<hr>
-	<img src="assets/images/points_display.png" class="points-display" alt="points-earned-logo">
+		<button class="points ribbon-outset border" >Points:{{points}}</button>
 	<hr>
 	<div class="clear"></div>
 	<section class="caseShow">
 		<aside class="welcome-core-pat">
 			<p class="welcome-text">WELCOME</p>
 			<h2>{{playerName}}</h2>
-			<img src="assets/images/Core-Pat-1-small.png" class="Core-Pat-1-small" alt="Core-Pat-1-small-logo">
+			<img src="assets/images/Core-Pat-1-small.png" class="Core-Pat-1-small" alt="Core-Pat-1-small-logo">	
 		</aside>
+
 		<img src="assets/images/Core-Pat-1-watermark.png" class="CorePat-watermark" alt="Core-Pat-1-watermark-logo">
+		
+		<img src="assets/images/right-tick.png" class="right-arrow" alt="right answer" ng-show="right">
+		<img src="assets/images/wrong-tick.png" class="wrong-arrow" alt="wrong answer" ng-show="wrong">
+		<button class="next" ng-click="next()" ng-model="disable">
+			 <span class="glyphicon glyphicon-arrow-right" ng-disabled="disable"></span>
+		</button>
+	
 		<aside class="pointTree-core-pat">
 			<p class="point-text">POINT TREE</p>
 			<dir class="box">
@@ -34,27 +44,27 @@
 	</section>
 	<section class="question-choices">
 
-	<div class="question">
-	<!-- <img src="./assets/images/question-border.png" class="question-display"> -->
+	<div class="button ribbon-outset border">
 	<p>{{myWel[i].Question}}</p>
 	</div>
-	
-	<img src="./assets/images/points_display.png" class="answers-option">
-	<img src="./assets/images/points_display.png" class="answers-option">
-	<img src="./assets/images/points_display.png" class="answers-option">
-	<img src="./assets/images/points_display.png" class="answers-option">
-<button  ng-click="lock()">click</button>
+	<button ng-click="click1();ans(myWel[i].A)" ng-class="clicked1? 'optionA' : 'violet'" class="answer ribbon-outset border" ng-disabled="disable"></button>
+	<!-- </div> -->
+	<button ng-click="click2();ans(myWel[i].B)" ng-class="clicked2 ? 'optionA' : 'violet'"  class="answer ribbon-outset border" ng-disabled="disable"></button>
+	<button ng-click="click3();ans(myWel[i].C)" ng-class="clicked3 ? 'optionA' : 'violet'"  class="answer ribbon-outset border"  ng-disabled="disable"></button>
+	<button ng-click="click4();ans(myWel[i].D)" ng-class="clicked4 ? 'optionA' : 'violet'"  class="answer ribbon-outset border" ng-disabled = "disable"></button>
 
 	<ul>
 	<li>
 		
-		<span class="answerA">A : {{myWel[i].A}}</span>
-		<span class="answerB">B : {{myWel[i].B}}</span>
-		<span class="answerC">C : {{myWel[i].C}}</span>
-		<span class="answerD">D : {{myWel[i].D}}</span>
+		<button ng-click="click1();ans(myWel[i].A)" ng-disabled="disable" ng-class="clicked1 ? 'optionA' : 'violet'"  class="answerA">A : {{myWel[i].A}}</button>
+		<button ng-click="click2();ans(myWel[i].B) " ng-disabled="disable" ng-class="clicked2 ? 'optionA' : 'violet'"  class="answerB">B : {{myWel[i].B}}</button>
+		<button ng-click="click3();ans(myWel[i].C)" ng-disabled="disable" ng-class="clicked3 ? 'optionA' : 'violet'"  class="answerC">C : {{myWel[i].C}}</button>
+		<button ng-click="click4();ans(myWel[i].D)" ng-disabled="disable" ng-class="clicked4 ? 'optionA' : 'violet'" class="answerD">D : {{myWel[i].D}}</button>
 
 	</li>
 	</ul> 
+	<button class="unlock" ng-click="unlock()" ng-disabled="disable">unlock</button>
+	<button class="lock" ng-click="lock()"  ng-model="disable" ng-disabled="disable">lock</button>
+	</section>
 	
-		</section>
 	</section>
