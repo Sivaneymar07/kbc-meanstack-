@@ -1,4 +1,6 @@
+
 <section class="container">
+
 	<a href="#"><img src="assets/images/lifeline50-50.png" class="lifeline" alt="points-earned-logo"></a>
 	<a href="#"><img src="assets/images/lifeline-audience.png" class="lifeline" alt="points-earned-logo"></a>
 	<div class="clear"></div>
@@ -10,43 +12,58 @@
 		<aside class="welcome-core-pat">
 			<p class="welcome-text">WELCOME</p>
 			<h2>{{playerName}}</h2>
-			<img src="assets/images/Core-Pat-1-small.png" class="Core-Pat-1-small" alt="Core-Pat-1-small-logo">
+			<img src="assets/images/Core-Pat-1-small.png" class="Core-Pat-1-small" alt="Core-Pat-1-small-logo">	
 		</aside>
+
 		<img src="assets/images/Core-Pat-1-watermark.png" class="CorePat-watermark" alt="Core-Pat-1-watermark-logo">
+		
+		<img src="assets/images/right-tick.png" class="right-arrow" alt="right answer">
+		<button class="next" ng-click="next()">
+			 <span class="glyphicon glyphicon-arrow-right"></span>
+		</button>
+	
 		<aside class="pointTree-core-pat">
 			<p class="point-text">POINT TREE</p>
-			<div class="box">
-			<ul>
-				<li>10. 10,00,000</li>
-				<li>9. 9,00,000</li>
-				<li>8. 8,00,000</li>
-				<li>7. 7,00,000</li>
-				<li>6. 6,00,000</li>
-				<li>5. 5,00,000</li>
-				<li>4. 4,00,000</li>
-				<li>3. 3,00,000</li>
-				<li>2. 2,00,000</li>
-				<li>1. 1,00,000</li>
+			<dir class="box" ng-controller="controller">
+			<ul class="nav nav-pills">
+				<li class="inactive"><a href="">10. 10,00,000</a></li>
+				<li class="inactive"><a href="">9. 9,00,000</a></li>
+				<li class="inactive"><a href="">8. 8,00,000</a></li>
+				<li class="inactive"><a href="">7. 7,00,000</a></li>
+				<li class="inactive"><a href="">6. 6,00,000</a></li>
+				<li class="inactive"><a href="">5. 5,00,000</a></li>
+				<li class="inactive"><a href="">4. 4,00,000</a></li>
+				<li class="inactive"><a href="">3. 3,00,000</a></li>
+				<li class="inactive"><a href="">2. 2,00,000</a></li>
+				<li class="inactive"><a href="">1. 1,00,000</a></li>
 			</ul>
-			</div>
+			</dir>
 		</aside>
-		
+		<div class="clear"></div>
 	</section>
-	<!-- caseshow sections ends here -->
-	<!-- <section class="gameDetails">
-		<h2>{{playerName}}</h2>
-		<section class="roundDetails">
-			<div class="yourCase">
-				<span>Your Case</span>
-				<div ng-show="showBox">
-					{{selectedNumber}}
-				</div>
-			</div>
-			<div class="round">
-				<span>Select a case</span>
-			</div>
-			<div class="clear"></div>
-		</section>
-	</section> -->
-	<!-- gameDetails ends here -->
-</section>
+	<section class="question-choices">
+
+	<div class="button ribbon-outset border">
+	<p>{{myWel[i].Question}}</p>
+	</div>
+	<span ng-click="click1();ans(myWel[i].A)" ng-class="clicked1? 'optionA' : 'violet'" class="answer ribbon-outset border"></span>
+	<!-- </div> -->
+	<span ng-click="click2();ans(myWel[i].B)" ng-class="clicked2 ? 'optionA' : 'violet'"  class="answer ribbon-outset border"></span>
+	<span ng-click="click3();ans(myWel[i].C)" ng-class="clicked3 ? 'optionA' : 'violet'"  class="answer ribbon-outset border"></span>
+	<span ng-click="click4();ans(myWel[i].D)" ng-class="clicked4? 'optionA' : 'violet'"  class="answer ribbon-outset border"></span>
+
+	<ul>
+	<li>
+		
+		<span ng-click="click1();ans(myWel[i].A)" ng-class="clicked1 ? 'optionA' : 'violet'"  class="answerA">A : {{myWel[i].A}}</span>
+		<span ng-click="click2();ans(myWel[i].B) " ng-class="clicked2 ? 'optionA' : 'violet'"  class="answerB">B : {{myWel[i].B}}</span>
+		<span ng-click="click3();ans(myWel[i].C)" ng-class="clicked3 ? 'optionA' : 'violet'"  class="answerC">C : {{myWel[i].C}}</span>
+		<span ng-click="click4();ans(myWel[i].D)" ng-class="clicked4 ? 'optionA' : 'violet'" class="answerD">D : {{myWel[i].D}}</span>
+
+	</li>
+	</ul> 
+	<button class="unlock" ng-click="unlock()">unlock</button>
+	<button class="lock" ng-click="lock()">lock</button>
+	</section>
+	
+	</section>

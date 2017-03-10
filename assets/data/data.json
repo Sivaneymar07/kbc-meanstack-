@@ -1,72 +1,82 @@
 [
 {
-"Question":"1. Brass gets discoloured in air because of the presence of which of the following gases in air?",
-"A": "Oxygen",
-"B": "HS",
-"C": "Carbon dioxide",
-"D": "Nitrogen"
+"Question":"1. Which is the nearest star to planet earth?",
+"A": "Sun",
+"B": "Moon",
+"C": "Pluto",
+"D": "Jupiter",
+"Answer": "Sun"
 },
 {
 "Question":"2. Which of the following is used in pencils?",
 "A": "Graphite",
 "B": "Silicon",
 "C": "Charcoal",
-"D": "Phosphorous"
+"D": "Phosphorous",
+"Answer": "Graphite"
 },
 {
 "Question":"3. The great Victoria Desert is located in?",
 "A": "Canada",
 "B": "West Africa",
 "C": "Australia",
-"D": "North America"
+"D": "North America",
+"Answer": "Australia"
 },
 {
 "Question":"4. The largest gold producing country in the world(in 2006) is?",
 "A": "China",
 "B": "Canada",
 "C": "South Africa",
-"D": "USA"
+"D": "USA",
+"Answer": "South Africa"
 },
 {
 "Question":"5. The largest country of the world by geographical area is?",
 "A": "Russia",
 "B": "Vatican City",
 "C": "Australia",
-"D": "USA"
+"D": "USA",
+"Answer": "Russia"
 },
 {
 "Question":"6. The largest part of our hydrosphere is?",
 "A": "Atlantic Ocean",
 "B": "Indian Ocean",
-"C": "Pacific ocean",
-"D": "Antarctica ocean"
+"C": "Pacific Ocean",
+"D": "Antarctica Ocean",
+"Answer": "Pacific Ocean"
 },
 {
 "Question":"7. Marathon is to race as hibernation is to?",
 "A": "winter",
-"B": "glass",
-"C": "cover",
-"D": "page"
+"B": "bear",
+"C": "dream",
+"D": "sleep",
+"Answer": "sleep"
 },
 {
 "Question":"8. Who invented the BALLPOINT PEN?",
 "A": "Biro Brothers",
 "B": "Waterman Brothers",
 "C": "Bicc Brothers",
-"D": "Write Brothers"
+"D": "Write Brothers",
+"Answer": "Biro Brothers"
 },
 {
 "Question":"9. What Galileo invented?",
 "A": "Barometer",
 "B": "Pendulum clock",
 "C": "Microscope",
-"D": "Thermometer"
+"D": "Thermometer",
+"Answer": "Thermometer"
 },
 {
 "Question":"10. In which decade was the Internet first implemented?",
 "A": "1940s",
 "B": "1950s",
 "C": "1960s",
-"D": "1980s"
+"D": "1980s",
+"Answer": "1960s"
 }
 ]

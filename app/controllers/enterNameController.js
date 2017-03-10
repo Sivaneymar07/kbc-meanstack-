@@ -1,10 +1,7 @@
 app.controller('enterNameController',['$scope','gameService','$location',function($scope,gameService,$location) {
 	$scope.playerName="";
 	gameService.playerName=""; //to refresh player name so that prevent navigation to pages using older player name
-	// $scope.showError=false;
-	// gameService.dealAmount=0;
-	// gameService.gameStarted=false;
-	// gameService.yourBoxAmount=0;
+	$scope.showError=false;
 
 	var pattern=/^[a-zA-Z ]{2,}$/;
 
@@ -19,7 +16,7 @@ app.controller('enterNameController',['$scope','gameService','$location',functio
 			$scope.playerName="";
 			$scope.showError=true;
 		}
-	}
+	};
 	var validatePlayerName=function(name)
 	{
 		if(!pattern.test(name))

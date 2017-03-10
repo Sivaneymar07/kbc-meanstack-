@@ -1,13 +1,14 @@
 <section class="container">
 	<a><img src="assets/images/Core-Pat-1.png" class="gamename" ></a>
-	<article>
 	
-	<div class="left-triangle"></div>
+	<section class="input-type">
+	<span class="left-triangle"></span>
 	<input type="text" class="playername" placeholder="   Type your name here" ng-keyup="$event.keyCode==13 && play()"  ng-model="playerName">
-	<div class="right-triangle"></div>
+	
+	<span class="right-triangle"></span>
 	<div class="clear"></div>
-
-	</article>
+	</section>
+	
 	<p class="error" ng-show="showError">Enter your name here (name should contain only Alphabets & minimum 2 character length)</p>
 	<button class="play" ng-click="play()">Start</button>
 </section>
